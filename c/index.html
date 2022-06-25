@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Grade 11 Computer Programming solutions. Grade 11 C language Programs">
+      <meta name="keywords" content="C Language, Programming, Grade 11 Answers, NEB Computer answers">
+      <meta name="author" content="Nikas Ghimire">
+      <meta name="viewport" content="width=1024">
+      <style>
+         pre {
+         color: white;
+         font-family: ;
+         font-size: 15px;
+         }
+         body {
+         background-color: green;
+         }
+         h1 {
+         text-align: center;
+         color: purple;
+         font-family: calibri;
+         background-color: yellow;
+         width: 30%;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         border-radius: 15px;
+         margin-bottom: 3%;
+         }
+         div {
+         background-color: crimson;
+         margin-right: 10%;
+         margin-left: 10%;
+         margin-top: 2%;
+         padding-bottom: 5%;
+         border-radius: 10px;
+         padding-top: 1%;
+         max-width: 80%;
+         padding-right: 5%;
+         padding-left: 5%;
+         overflow: auto;
+         }
+         h4 {
+         text-align: center;
+         color: white;
+         font-family: ;
+         }
+         ::-webkit-scrollbar {
+         border: 1em;
+         border-radius: 5%;
+         height: 15px;
+         color: white;
+         }
+         ::-webkit-scrollbar-track {
+         border-radius: 15px;
+         }
+         ::-webkit-scrollbar-thumb {
+         background-color: darkgrey;
+         outline: 1px solid slategrey;
+         border-radius: 100px;
+         }
+         .blink {
+         animation: blink-animation 1s steps(5, start) infinite;
+         -webkit-animation: blink-animation 1s steps(2, start) infinite;
+         }
+         @keyframes blink-animation {
+         to {
+         visibility: hidden;
+         }
+         }
+         @-webkit-keyframes blink-animation {
+         to {
+         visibility: hidden;
+         }
+         }
+         .a {
+         margin-top: 1%;
+         }
+      </style>
+      <title>C CODE</title>
+   </head>
+   <body>
+      <hr class="a">
+      <center>
+         <br>
+         <pre><class class="blink">
+
+ █     █░▓█████  ██▓     ▄████▄   ▒█████   ███▄ ▄███▓▓█████ 
+▓█░ █ ░█░▓█   ▀ ▓██▒    ▒██▀ ▀█  ▒██▒  ██▒▓██▒▀█▀ ██▒▓█   ▀ 
+▒█░ █ ░█ ▒███   ▒██░    ▒▓█    ▄ ▒██░  ██▒▓██    ▓██░▒███   
+░█░ █ ░█ ▒▓█  ▄ ▒██░    ▒▓▓▄ ▄██▒▒██   ██░▒██    ▒██ ▒▓█  ▄ 
+░░██▒██▓ ░▒████▒░██████▒▒ ▓███▀ ░░ ████▓▒░▒██▒   ░██▒░▒████▒
+░ ▓░▒ ▒  ░░ ▒░ ░░ ▒░▓  ░░ ░▒ ▒  ░░ ▒░▒░▒░ ░ ▒░   ░  ░░░ ▒░ ░
+  ▒ ░ ░   ░ ░  ░░ ░ ▒  ░  ░  ▒     ░ ▒ ▒░ ░  ░      ░ ░ ░  ░
+  ░   ░     ░     ░ ░   ░        ░ ░ ░ ▒  ░      ░      ░   
+    ░       ░  ░    ░  ░░ ░          ░ ░         ░      ░  ░
+                        ░
+                      </class></pre>
+      </center>
+      <hr>
+      <br>
+      <center>
+         <h1>COMPUTER<br>LAB QUESTION<br>SOLUTIONS</h1>
+      </center>
+      <hr width="40%">
+      <h4>AUTHORS : NIKAS, MIJAN, DIWAS</h4>
+      <hr width="30%">
+      <br>
+      <br>
+      <pre>
+<hr><div>
+#include&lt;stdio.h&gt;
+int main(){
+  
+int a, b, c;
+  
+printf ("ENTER FIRST NUMBER\n");
+  
+scanf ("%d", &amp;a);
+  
+printf ("ENTER SECOND NUMBER\n");
+  
+scanf ("%d", &amp;b);
+  
+printf ("\n");
+  
+c = (a &gt; b) ? a / b : a * b;
+  
+printf ("%d", c);
+  
+return 0;
+
+}
+</div>
+<hr><div>
+
+#include&lt;stdio.h&gt;
+  
+int main(){
+  
+int a, b;
+  
+printf ("ENTER OPERATION NUMBER\n");
+  
+scanf ("%d", &amp;a);
+  
+switch (a)
+    {
+    
+case 1:
+      
+printf ("SCHOOL OF COMPUTER SCIENCE\nENTER YOUR BRANCH NUMBER\n");
+      
+scanf ("%d", &amp;b);
+      
+switch (b)
+  {
+  
+case 1:
+    
+printf ("DEPARTMENT OF INFORMATIVES\n");
+    
+break;
+  
+case 2:
+    
+printf ("DEPARTMENT OF MACHINE LEARNING\n");
+    
+break;
+  
+}
+      
+break;
+    
+ 
+case 2:
+      
+printf ("SCHOOL OF BUSINESS\n");
+      
+break;
+    
+ 
+case 3:
+      
+printf ("SCHOOL OF ENGEENERING\n");
+      
+break;
+    
+ 
+}
+  
+return 0;
+
+}
+</div>
+<hr><div>
+  
+#include&lt;stdio.h&gt;
+int main(){
+  
+int a;
+  
+printf ("GOOD LUCK, ENTER YOUR SCORE\n");
+  
+scanf ("%d", &amp;a);
+  
+ 
+if (a &gt; 100)
+    {
+      
+printf ("INVALID INPUT\n");
+    
+}
+  else if (a &gt;= 90)
+    {
+      
+printf ("A");
+    
+}
+  else if (a &gt;= 80)
+    {
+      
+printf ("B");
+    
+}
+  else if (a &gt;= 70)
+    {
+      
+printf ("C");
+    
+}
+  else if (a &gt;= 60)
+    {
+      
+printf ("D");
+    
+}
+  else if (a &gt;= 50)
+    {
+      
+printf ("E");
+    
+}
+  else
+    {
+      
+printf ("F");
+    
+}
+  
+return 0;
+
+}
+ </div>
+<hr><div>
+  
+#include&lt;stdio.h&gt;
+//AUTHOR MIJAN
+int main()
+{
+float unit, bill, scharge, total;
+re:
+printf("Enter units: ");
+scanf("%f", &amp;unit);
+if (unit&gt;= 0)
+{
+if (unit&lt;=50)
+{
+bill = unit*0.50;
+scharge = (20*bill)/100;
+total = bill + scharge;
+}
+else if (unit&gt;50 &amp;&amp; unit&lt;=150)
+{
+bill = ((unit-50)*0.75)+(50­*0.50);
+scharge = (20*bill)/100;
+total = bill + scharge;
+}
+else if (unit&gt;150 &amp;&amp; unit&lt;=250)
+{
+bill = ((unit-150)*1.20)+(1­00*0.75)+(50*0.50);
+scharge = (20*bill)/100;
+total = bill + scharge;
+}
+else if (unit&gt;250)
+{
+bill = ((unit-250)*1.50)+(1­00*1.20)+(100*0.75)+­(50*0.50);
+scharge = (20*bill)/100;
+total = bill + scharge;
+}
+}
+else
+{
+printf("\nINVALID INPUT!! Please enter unit within range (&gt;0)!\n");
+goto re;
+}
+printf("Electricity bill for %.2f units is Rs. %.2f/-", unit, bill);
+printf("\nSurcharge is Rs. %.2f/-", scharge);
+printf("\nTotal bill to be paid is Rs. %.2f/-", total);
+return 0; 
+}
+</div>
+<hr><div>
+  
+#include &lt;stdio.h&gt;
+
+int main(){
+  
+int a[5];     
+  int i, fast, slow;
+  
+float n, avg;
+  
+ 
+printf ("Enter 5 cars speed");
+
+    
+for (i = 0; i &lt; 5; i++)
+    {
+      
+scanf ("%d", &amp;a[i]);
+    
+}
+
+    fast = a[0];   
+  slow = a[0];
+  
+ 
+for (i = 0; i &lt; 5; i++)
+    {
+      
+ 
+if (a[i] &gt; fas fast = a[0];)
+       slow = a[0]; 
+ 
+for (i = 0; i &lt; 5; i++)
+       {
+       
+ 
+if (a[i] &gt; fast)
+       {      
+       fast = a[i];
+       }
+       
+if (a[i] &lt; slow)
+       {      
+       slow = a[i]; 
+       }
+       
+ 
+n = n + a[i]; // sum of all cars
+       }
+       
+avg = n / 5; 
+ 
+printf ("fastest speed in 5 car is %d\n", fast);
+       printf ("slowest speed in 5 car is %d\n", slow);
+       printf ("average speed in 5 car is %0.2f\n", avg); 
+ 
+return (0);
+
+}
+</div>     
+<hr><div>
+       
+#include&lt;stdio.h&gt;
+       
+int main (){    
+int a; 
+printf ("ENTER A DAY CODE\n"); 
+scanf ("%d", &amp;a);
+       
+switch (a)
+       {
+
+case 1:
+
+printf ("ITS SUNDAY"); 
+break; 
+ 
+case 2:
+
+printf ("ITS MONDAY"); 
+break; 
+ 
+case 3:
+
+printf ("ITS TUESDAY"); 
+break; 
+ 
+case 4:
+
+printf ("ITS WEDNESDAY"); 
+break; 
+ 
+case 5:
+
+printf ("ITS THURSDAY"); 
+break; 
+ 
+case 6:
+
+printf ("ITS FRIDAY"); 
+break; 
+ 
+case 7:
+
+printf ("ITS SATURDAY"); 
+break; 
+ 
+default:
+       
+printf ("INVALID INPUT"); 
+break; 
+ 
+}   
+return 0; 
+
+}
+</div>    
+<hr><h2 align="center">
+THE END</h3><br><hr>
+</pre>
+   </body>
+</html>
