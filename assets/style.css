@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    animation: bg 3s forwards;
+    animation-iteration-count: 1;
+    background-image: url("2.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text{
+    color: white;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes bg{
+    0%{
+        background-image: url("1.jpg");
+    }
+
+    25%{
+        background-image: url("1.jpg");
+    }
+
+    50%{
+        background-image: url("1.jpg");
+    }
+
+    75%{
+        background: url("1.jpg");
+    }
+
+    100%{
+        background-image: url("2.jpg");
+    }
+}
