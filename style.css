@@ -1,0 +1,134 @@
+:root {
+    --wide: 40px;
+    --thin: 35px;
+}
+
+body {
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.f {
+    display: flex;
+    margin: 2%;
+}
+
+.n1,
+.n2,
+.n3,
+.i1,
+.k1,
+.k2,
+.k3,
+.a1,
+.a2,
+.a3,
+.s1,
+.s2,
+.s3,
+.s4 {
+    background-color: yellow;
+    border-radius: 10px;
+    animation: color 1s infinite ease;
+    animation-direction: alternate;
+}
+
+.n1 {
+    height: 200px;
+    width: var(--wide);
+}
+
+.n2 {
+    height: 200px;
+    width: var(--wide);
+    transform: rotate(-25deg);
+}
+
+.n3 {
+    height: 200px;
+    width: var(--wide);
+}
+
+.i1 {
+    height: 200px;
+    width: var(--wide);
+}
+
+.k1 {
+    height: 200px;
+    width: var(--wide);
+}
+
+.k2 {
+    height: 150px;
+    width: var(--thin);
+    transform: rotate(30deg);
+}
+
+.k3 {
+    height: 140px;
+    width: var(--thin);
+    transform: translateY(40px) rotate(-30deg) translateX(-50px);
+}
+
+.a1 {
+    height: 200px;
+    width: var(--wide);
+    transform: rotate(10deg);
+}
+
+.a2 {
+    height: 200px;
+    width: var(--wide);
+    transform: rotate(-10deg);
+}
+
+.s1 {
+    height: 100px;
+    width: var(--thin);
+    transform: translateY(-80px) rotate(35deg) translateX(50px);
+}
+
+.s2 {
+    height: 80px;
+    width: var(--thin);
+    transform: translateY(35px) rotate(-50deg) translateX(30px);
+}
+
+.s3 {
+    height: 100px;
+    width: var(--thin);
+    transform: translateY(55px) rotate(35deg) translateX(-5px);
+}
+
+@keyframes color{
+    0%{
+        background-color: red;
+    }
+
+    50%{
+        background-color: green;
+    }
+
+    100%{
+        background-color: blue;
+    }
+}
+
+.center{
+    background-color: gray;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}

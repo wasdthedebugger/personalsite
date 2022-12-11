@@ -1,37 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://nikas.com.np/cascadelib/center.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="3.5, url=retro/index.html">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.jpg">
-    <title>Nikas Ghimire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="image_src" href="preview.png"/>
+    <title>NIKAS</title>
+    <meta name="description" content="Styling Divs using CSS to display Name.">
 </head>
+
 <body>
-    <div class="text" id="text"></div>
+
     
 
 </body>
-<script>
-    var i=0, text;
-    text = "NIKAS";
+<script src="script.js"></script>
 
-    function typing(){
-        var org = text.length;
-        if(i<text.length){
-            document.querySelector(".text").innerHTML = text.charAt(i);
-            i++;
-            setTimeout(typing, 450);
-        }
-    }
-
-    function final(){
-            document.querySelector(".text").innerHTML = text;
-    }
-
-typing();
-setTimeout(final, 2350);
-</script>
 </html>
