@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nikas Ghimire</title>
 </head>
 
@@ -23,7 +23,6 @@
             </div>
         </div>
         <div id="inner"><img id="propic"
-                src="https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/324674302_1225155581715642_224581748176433439_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_Rogncr8ZqQAX9xnDVr&_nc_ht=scontent.fktm10-1.fna&oh=00_AfAkOs-vY3bXu2lgU9fTPymzFmWlJhY6Mq0KE3qcbryjMg&oe=63C63F17"
                 alt="Nikas Ghimire" srcset=""><br>
             <div id="name">NIKAS GHIMIRE</div>
             <div id="subname">WASD THE DEBUGGER</div>
@@ -51,5 +50,30 @@
         </div>
     </div>
 </body>
+
+<script>
+
+var images = [];
+
+images[0] = ['nikas1.jpg'];
+images[1] = ['nikas2.jpg'];
+images[2] = ['nikas3.jpeg'];
+
+var index = 0;
+
+function change() {
+  document.getElementById("propic").src = images[index];
+  if (index == 2) {
+    index = 0;
+  } else {
+    index++;
+  }
+
+  setTimeout(change, 3000);
+}
+
+window.onload = change();
+
+</script>
 
 </html>
