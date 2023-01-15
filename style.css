@@ -104,3 +104,7 @@ body{
 		background-position: 0% 50%;
 	}
 }
+
+#contact a{
+    color: black;
+}
