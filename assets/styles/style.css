@@ -17,13 +17,13 @@ body{
 }
 
 .center{
-    background-color: rgba(255, 255, 255, 0.053);
+    background-color: rgba(255, 255, 255, 0.073);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 330px;
     /* border-radius: 20px; */
-    /* border: 2px solid black; */
+    /* border: 2px solid black; */  
 }
 
 #buttons{
