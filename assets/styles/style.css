@@ -12,6 +12,8 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .center{
@@ -19,7 +21,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: fit-content;
+    width: 330px;
     /* border-radius: 20px; */
     /* border: 2px solid black; */
 }
@@ -31,13 +33,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: right;
+    gap: 5px;
 }
 
 #buttons .button{
     height: 24px;
     width: 24px;
     border: none;
-    margin: 0 5px;
+    cursor: pointer;
 }
 
 #inner{
@@ -90,12 +93,12 @@ body{
     align-items: center;
     justify-content: left;
     padding: 10px;
+    gap: 10px;
     /* border-radius: 0 0 20px 20px; */
 }
 
 #contact svg{
     border: none;
-    margin: 0 5px;
 }
 
 
@@ -103,7 +106,19 @@ body{
     height: 25px;
 }
 
-
 #contact a{
     color: black;
+}
+
+#announcement{
+    width: 330px;
+    background-color: yellow;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: justify;
 }
