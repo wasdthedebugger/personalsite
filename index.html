@@ -20,11 +20,13 @@
     Follow along as I share my insights on the latest tech trends and explore the endless possibilities of the digital world. 
     Connect with me and let's discover the exciting world of technology together.">
     <title>Nikas Ghimire</title>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 
 <body>
 
-    <div id="announcement">📢 Register for our free PowerPoint workshop</div>
+    <div id="announcement">📢 Schedule an appointment</div>
 
     <div class="center">
         <div id="buttons">
@@ -73,7 +75,7 @@
 <script>
     const announcement = document.getElementById('announcement');
     announcement.addEventListener('click', () => {
-        window.location.href = 'https://linktr.ee/theswotters';
+        Calendly.initPopupWidget({url: 'https://calendly.com/wasdthedebugger/talk-to-nikas'});return false;
     });
 
     const close = document.getElementById('close');
