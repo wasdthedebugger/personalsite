@@ -1,9 +1,8 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+body {
     background-color: black;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -13,50 +12,47 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px; /* Reduced gap */
 }
 
-.center{
+.center {
     background-color: rgba(255, 255, 255, 0.073);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 330px;
-    /* border-radius: 20px; */
-    /* border: 2px solid black; */  
+    width: 280px; /* Reduced width */
 }
 
-#buttons{
+#buttons {
     background-color: gray;
-    padding: 10px;
-    /* border-radius: 20px 20px 0 0; */
+    padding: 5px; /* Reduced padding */
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
     gap: 5px;
 }
 
-#buttons .button{
-    height: 24px;
-    width: 24px;
+#buttons .button {
+    height: 20px; /* Reduced height */
+    width: 20px; /* Reduced width */
     border: none;
     cursor: pointer;
 }
 
-#inner{
+#inner {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 20px; /* Reduced padding */
 }
 
-#propiccontainer{
-    height: 220px;
-    width: 220px;
+#propiccontainer {
+    height: 180px; /* Reduced height */
+    width: 180px; /* Reduced width */
     border-radius: 50%;
     border: 5px solid rgb(43, 42, 42);
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Reduced margin */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,56 +60,49 @@ body{
     overflow: hidden;
 }
 
-#propic{
+#propic {
     height: 100%;
-    z-index: inherit;
 }
 
-#name{
-    font-size: 35px;
+#name {
+    font-size: 28px; /* Reduced font size */
     text-align: center;
     margin: 0;
     font-weight: bold;
     color: white;
 }
 
-#subname{
-    font-size: 15px;
+#subname {
+    font-size: 12px; /* Reduced font size */
     font-weight: 500;
     text-align: center;
     margin: 0;
-    padding: 10px;
+    padding: 5px; /* Reduced padding */
     font-weight: bold;
     color: white;
 }
 
-#contact{
+#contact {
     background-color: gray;
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding: 10px;
-    gap: 10px;
-    /* border-radius: 0 0 20px 20px; */
+    justify-content: flex-start;
+    padding: 5px; /* Reduced padding */
+    gap: 5px; /* Reduced gap */
 }
 
-#contact svg{
-    border: none;
+.button img {
+    height: 20px; /* Reduced icon size */
 }
 
-
-.button img{
-    height: 25px;
-}
-
-#contact a{
+#contact a {
     color: black;
 }
 
-#announcement{
-    width: 330px;
+#announcement {
+    width: 280px; /* Reduced width */
     background-color: yellow;
-    padding: 15px;
+    padding: 10px; /* Reduced padding */
     display: flex;
     align-items: center;
     justify-content: center;
