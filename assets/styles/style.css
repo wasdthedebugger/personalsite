@@ -99,7 +99,7 @@ body {
     color: black;
 }
 
-#announcement {
+.announcement {
     width: 280px; /* Reduced width */
     background-color: yellow;
     padding: 10px; /* Reduced padding */

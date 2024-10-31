@@ -26,7 +26,7 @@
 
 <body>
 
-    <div id="announcement">📢 Make an appointment</div>
+    <div class="announcement" id="calendly">📢 Make an appointment</div>
 
     <div class="center">
         <div id="buttons">
@@ -70,10 +70,11 @@
             </a>
         </div>
     </div>
+    <div class="announcement" id="resume">👇🏾 Download Resume</div>
 </body>
 
 <script>
-    const announcement = document.getElementById('announcement');
+    const announcement = document.getElementById('calendly');
     announcement.addEventListener('click', () => {
         Calendly.initPopupWidget({url: 'https://calendly.com/wasdthedebugger/talk-to-nikas'});return false;
     });
@@ -81,6 +82,11 @@
     const close = document.getElementById('close');
     close.addEventListener('click', () => {
         document.getElementsByClassName('center')[0].style.display = 'none';
+    });
+
+    const resume = document.getElementById('resume');
+    resume.addEventListener('click', () => {
+        window.open('assets/files/NikasGhimireResume.pdf', '_blank');
     });
 </script>
 
