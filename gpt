@@ -1,0 +1,1 @@
+echo 'gpt() { firefox "https://chat.openai.com/?model=gpt-3.5&q=$(echo "$*" | sed "s/ /%20/g")"; }' >> ~/.bashrc && source ~/.bashrc
