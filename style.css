@@ -13,6 +13,10 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+h1{
+    font-size: xx-large !important;
+}
+
 a {
   color: #00f;
   text-decoration: underline;
