@@ -1,0 +1,176 @@
+/* Intentionally simple + “retro” */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+a {
+  color: #00f;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 22px 10px 40px;
+}
+
+h1 {
+  text-align: center;
+  margin: 8px 0 10px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.sub {
+  text-align: center;
+  margin: 0 0 18px;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.sub small {
+  display: block;
+  margin-top: 6px;
+}
+
+.hero {
+  text-align: center;
+  margin: 10px 0 18px;
+}
+
+.hero img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 1px solid #999;
+}
+
+.hero .cap {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #bbb;
+  margin: 18px 0;
+}
+
+table.layout {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.layout td {
+  vertical-align: top;
+}
+
+td.left,
+td.right {
+  width: 24%;
+  padding: 0 12px;
+}
+
+td.center {
+  width: 52%;
+  padding: 0 12px;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 10px 0 8px;
+}
+
+ul {
+  margin: 8px 0 14px 20px;
+}
+
+li {
+  margin: 6px 0;
+}
+
+.note {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid #bbb;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.post {
+  margin: 12px 0 16px;
+}
+
+.post .date {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.post .title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 4px 0 2px;
+}
+
+.post .excerpt {
+  font-size: 14px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.footer {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+}
+
+/* Make it readable on phones while keeping the vibe */
+@media (max-width: 860px) {
+  table.layout,
+  table.layout tr,
+  table.layout td {
+    display: block;
+    width: 100%;
+  }
+
+  td.center {
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  td.left,
+  td.right {
+    padding-top: 12px;
+  }
+}
