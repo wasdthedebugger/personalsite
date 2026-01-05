@@ -47,7 +47,7 @@
       const edges = data?.data?.publication?.posts?.edges ?? [];
 
       if (!edges.length) {
-        statusEl.textContent = "No posts found yet.";
+        statusEl.textContent = "";
         return;
       }
 
