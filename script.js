@@ -75,7 +75,7 @@
     } catch (err) {
       console.error(err);
       statusEl.innerHTML = `
-        Couldn’t load posts dynamically.
+        Hashnode has turned its GraphQL API into a paid service. Couldn’t load posts dynamically.
         <br />You can still read them here:
         <a href="https://${publicationHost}/" target="_blank" rel="noopener">${publicationHost}</a>
       `;
